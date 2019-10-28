@@ -29,7 +29,7 @@ def update_counting_hash(hash, key)
   hash = {}
   
   if hash.has_key?(key)
-    :key += 1
+    hash[:key] += 1
   else
-    :key = 1
+    hash[:key] = 1
 end
