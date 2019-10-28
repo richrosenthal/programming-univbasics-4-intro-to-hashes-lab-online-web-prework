@@ -21,14 +21,14 @@ end
 
 def read_from_hash(hash, key)
   hash = {}
-  key = :name
+  hash.key(key)
   
 end
 
 def update_counting_hash(hash, key)
   hash = {}
   
-  if hash[:key]
+  if hash.has_key?(key)
     :key += 1
   else
     :key = 1
