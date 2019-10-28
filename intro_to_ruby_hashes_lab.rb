@@ -21,9 +21,15 @@ end
 
 def read_from_hash(hash, key)
   hash = {}
-  hash = {key => nil} 
+  key = :name
+  
 end
 
 def update_counting_hash(hash, key)
+  hash = {}
   
+  if hash[:key]
+    :key += 1
+  else
+    :key = 1
 end
